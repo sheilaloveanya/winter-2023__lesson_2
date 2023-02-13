@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<H1>Задача 3</H1>
+	<p> Дано вартість одиниці товару і кількість. Знайти загальну вартість та ПДВ (5% від загальної вартості). </p>
+	<script>
+		// ВВодимо необхідні дані.
+		let productPrice = parseFloat(prompt ('Введіть ціну за одиницю товару','0'))
+		let productQuantity = parseInt(prompt ('Введіть кіькість одиниць товару','0'))
+		let tax = 0.05
+
+		//Знаходимо результат
+		const allPrice = productPrice * productQuantity
+		const allTax = tax / allPrice * 100
+
+		//Виводимо результат
+		document.write (` 
+		<p>Загальна вартість ${allPrice} $</p>
+		<p> Сумма податку у розмірі 0.05  ${allPrice} $</p>
+		`)
+
+	</script>
+</body>
+</html>

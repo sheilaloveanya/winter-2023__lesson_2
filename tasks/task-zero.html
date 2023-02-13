@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<H1>Задача O</H1>
+	<p> Обчислити значення виразів <br>
+		1) S1=a+12+b <br>
+		2) S2=a+b2a <br>
+		3) S3=3(a+b)c <br>
+		4) S4=sin⁡(a-b)</p>
+	<script>
+		// ВВодимо необхідні дані.
+		let a = parseFloat(prompt(' Enter a number for a', '0'))
+		let b = parseFloat(prompt(' Enter b number for b', '0'))
+		let c = parseFloat(prompt(' Enter c number for c', '0'))
+
+
+		//Знаходимо результат
+		
+		let S1 = a+12+b;
+		document.write(`S1 = {S1}`)
+
+		let S2 = Math.sqrt((a+b)/(2*a))
+		document.write(`S2 = ${S2}`)
+
+		let S3 = Math.cbrt((a+b)/c)
+		document.write(`S3 = ${S3}`)
+
+		let S4 = Math.sin(a/-b);
+		document.write(`S4 = ${S4}`)
+
+	</script>
+</body>
+</html>
